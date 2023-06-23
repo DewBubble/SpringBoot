@@ -1,0 +1,14 @@
+<h1>IMDB: Top 5 Episodes</h1>
+<table width="100%" border="solid">
+    <tr>
+        <th>Title</th>
+        <th>Episodes</th>
+        <th>Ratings</th>
+    </tr>
+    <tr  th:each="s:${showList}">
+        <td th:text="${s.title}"></td>
+        <td th:text="${s.episode}"></td>
+        <td th:text="${s.rating}"></td>
+    </tr>
+
+</table>

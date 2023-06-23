@@ -1,0 +1,7 @@
+<html>
+    <h1 th:text="${imageName}"></h1>
+    <div th:switch="${imageName}">
+        <img th:case="'starry-night'" src="images/starry-night.jpeg"  width="300"/>
+        <img th:case="'mona-lisa'" src="images/mona-lisa.jpeg" width="300"/>
+    </div>
+</html>
